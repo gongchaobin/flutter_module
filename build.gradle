@@ -5,6 +5,16 @@ buildscript {
         google()
         jcenter()
     }
+    Properties props = new Properties()
+    File file = new File("$project.rootDir/env.properties")
+    if (file.exists()) {
+        def fis = new FileInputStream(file)
+        props.load(fis)
+        props.each { prop ->
+            rootProject.ext[prop.key] = prop.value == null || prop.value == "null" ? "" : prop.value
+        }
+        fis.close()
+    }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"

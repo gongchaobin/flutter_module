@@ -15,9 +15,42 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
+    signingConfigs {
+        debug {
+            keyAlias rootProject.keyAlias
+            keyPassword rootProject.keyAliasPassword
+            storeFile file(rootProject.storeFile)
+            storePassword rootProject.storePassword
+
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+
         release {
+            keyAlias rootProject.keyAlias
+            keyPassword rootProject.keyAliasPassword
+            storeFile file(rootProject.storeFile)
+            storePassword rootProject.storePassword
+
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
             minifyEnabled false
+            shrinkResources false
+
+            signingConfig signingConfigs.release
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -25,6 +58,10 @@ android {
     compileOptions {
         sourceCompatibility 1.8
         targetCompatibility 1.8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
     }
 }
 
