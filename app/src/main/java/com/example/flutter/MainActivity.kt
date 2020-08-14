@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             startActivity(Intent(this,FlutterMainActivity::class.java))
         }
+
+        button1.setOnClickListener {
+            startActivity(Intent(this,FlutterViewActivity::class.java))
+        }
     }
 
 }

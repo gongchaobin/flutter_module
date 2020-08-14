@@ -21,6 +21,10 @@
         <activity android:name=".FlutterMainActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".FlutterViewActivity"
+            android:theme="@style/NoActionBarTheme"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

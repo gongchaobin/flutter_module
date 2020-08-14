@@ -2,5 +2,7 @@
     <string name="app_name">Flutter示例代码</string>
 
     <string name="test_flutter_native_communication">测试原生和Flutter通信</string>
+
+    <string name="flutter_text">Flutter</string>
     
 </resources>
