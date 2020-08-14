@@ -18,7 +18,6 @@
         </activity>
 
         <activity android:name=".FlutterMainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"/>
 
     </application>
