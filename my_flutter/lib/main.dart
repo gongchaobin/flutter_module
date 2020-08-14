@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:my_flutter/HomePage.dart';
+import 'package:my_flutter/HomePage2.dart';
 
 import 'MyHomePage.dart';
 
@@ -37,6 +38,8 @@ class MyApp extends StatelessWidget {
         return MyHomePage(title: 'Home Page',);
       case "router2":
         return HomePage(title: 'Home',);
+      case "router3":
+        return HomePage2(title: "路由跳转测试",);
     }
   }
 

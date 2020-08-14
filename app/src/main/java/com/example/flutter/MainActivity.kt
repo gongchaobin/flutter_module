@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         val data = ArrayList<ItemEntity>()
         data.add(ItemEntity(getString(R.string.test_flutter_native_communication),"router0"))
-        data.add(ItemEntity(getString(R.string.flutter_text),"router1"))
-        data.add(ItemEntity(getString(R.string.flutter_router),"router2"))
+        data.add(ItemEntity(getString(R.string.flutter_text),"router2"))
+        data.add(ItemEntity(getString(R.string.flutter_router),"router3"))
 
         val adapter = ListItemAdapter(R.layout.item_view,data)
         recyclerView.adapter = adapter
