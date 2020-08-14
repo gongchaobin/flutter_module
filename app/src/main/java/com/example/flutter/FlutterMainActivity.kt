@@ -9,6 +9,7 @@ import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugin.common.BasicMessageChannel
+import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.StringCodec
 import kotlinx.android.synthetic.main.activity_test.*
@@ -31,6 +32,8 @@ class FlutterMainActivity : AppCompatActivity() {
         private const val METHOD_MESSAGE_CHANNEL = "cn.wzh.whitter.plugins.flutter"
 
         private const val NATIVE_METHOD_LOGIN = "login"
+
+        private const val EVENT_MESSAGE_CHANNEL = "com.example.evenhanded/inter"
 
     }
 
@@ -73,10 +76,6 @@ class FlutterMainActivity : AppCompatActivity() {
 
         val methodChannel = MethodChannel(messenger, METHOD_MESSAGE_CHANNEL)
         button1.setOnClickListener {
-
-        }
-
-        button2.setOnClickListener {
             methodChannel.invokeMethod("callFlutter", "{'arg1':'来自Native'}", object : MethodChannel.Result {
                 override fun notImplemented() {
                     Log.i(TAG,"notImplemented")
@@ -90,6 +89,9 @@ class FlutterMainActivity : AppCompatActivity() {
                     Log.i(TAG,"success")
                 }
             })
+        }
+
+        button2.setOnClickListener {
         }
 
         // 接收消息

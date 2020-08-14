@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +20,31 @@ class _MyHomePageState extends State<MyHomePage> {
 
   static const _platform = const MethodChannel("cn.wzh.whitter.plugins"
       ".flutter");
+
+  static const EventChannel eventChannel = const EventChannel("com.example.evenhanded/inter");
+  StreamSubscription _streamSubscription;
+  String _platformMessage;
+
+  void _enableEventReceiver() {
+    _streamSubscription = eventChannel.receiveBroadcastStream().listen(
+            (dynamic event) {
+          print('Received event: $event');
+          setState(() {
+            _platformMessage = event;
+          });
+        },
+        onError: (dynamic error) {
+          print('Received error: ${error.message}');
+        },
+        cancelOnError: true);
+  }
+
+  void _disableEventReceiver() {
+    if (_streamSubscription != null) {
+      _streamSubscription.cancel();
+      _streamSubscription = null;
+    }
+  }
 
   void _incrementCounter() {
 //    setState(() {
@@ -41,8 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // TODO: implement initState
     super.initState();
 //    receiveMessage();
-
-    _platform.setMethodCallHandler(platformCallHandler);
+//    _platform.setMethodCallHandler(platformCallHandler);
+    _enableEventReceiver();
 
   }
 
@@ -54,6 +81,13 @@ class _MyHomePageState extends State<MyHomePage> {
         return call.arguments;
         break;
     }
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _disableEventReceiver();
   }
 
 
