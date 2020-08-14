@@ -2,12 +2,14 @@ package com.example.flutter
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import io.flutter.embedding.android.FlutterFragment
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugin.common.BasicMessageChannel
+import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.StringCodec
 import kotlinx.android.synthetic.main.activity_test.*
 
@@ -24,9 +26,11 @@ class FlutterMainActivity : AppCompatActivity() {
 
         private val TAG = FlutterMainActivity::class.simpleName
 
-        private const val ChANNAL = "com.simple.channelled/basic"
+        private const val BASIC_MESSAGE_ChANNAL = "com.simple.channelled/basic"
 
-        private const val ARG_ROUTE = "route"
+        private const val METHOD_MESSAGE_CHANNEL = "cn.wzh.whitter.plugins.flutter"
+
+        private const val NATIVE_METHOD_LOGIN = "login"
 
     }
 
@@ -57,7 +61,7 @@ class FlutterMainActivity : AppCompatActivity() {
 
         // BasicMessageChannel用来传递数据
         val messenger = flutterEngine.dartExecutor.binaryMessenger
-        val basicMessChannel = BasicMessageChannel<String>(messenger, ChANNAL, StringCodec
+        val basicMessChannel = BasicMessageChannel<String>(messenger, BASIC_MESSAGE_ChANNAL, StringCodec
             .INSTANCE)
 
         button.setOnClickListener {
@@ -67,12 +71,46 @@ class FlutterMainActivity : AppCompatActivity() {
             }
         }
 
+        val methodChannel = MethodChannel(messenger, METHOD_MESSAGE_CHANNEL)
+        button1.setOnClickListener {
+
+        }
+
+        button2.setOnClickListener {
+            methodChannel.invokeMethod("callFlutter", "{'arg1':'来自Native'}", object : MethodChannel.Result {
+                override fun notImplemented() {
+                    Log.i(TAG,"notImplemented")
+                }
+
+                override fun error(p0: String?, p1: String?, p2: Any?) {
+                    Log.i(TAG,"error")
+                }
+
+                override fun success(p0: Any?) {
+                    Log.i(TAG,"success")
+                }
+            })
+        }
+
         // 接收消息
         basicMessChannel.setMessageHandler { o, _ ->
             Log.i(TAG, "o= $o")
             button.text = o.toString()
         }
 
+        methodChannel.setMethodCallHandler { call, result ->
+            Log.i(TAG,"method: ${call.method}")
+            when(call.method) {
+                NATIVE_METHOD_LOGIN -> {
+                    login()
+                }
+            }
+        }
+
+    }
+
+    private fun login() {
+        Toast.makeText(this,"MethodChannel被调用了",Toast.LENGTH_SHORT).show()
     }
 
 }

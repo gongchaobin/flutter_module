@@ -16,11 +16,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
   BasicMessageChannel _basicMessageChannel = BasicMessageChannel("com.simple.channelled/basic", StringCodec());
 
+  static const _platform = const MethodChannel("cn.wzh.whitter.plugins"
+      ".flutter");
+
   void _incrementCounter() {
 //    setState(() {
 //      _counter++;
 //    });
-  _sendMessage();
+//  _sendMessage();
+
+    _platform.invokeMethod(
+        'login', {'message': '111'});
+
   }
 
   // 发送消息
@@ -33,8 +40,22 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    receiveMessage();
+//    receiveMessage();
+
+    _platform.setMethodCallHandler(platformCallHandler);
+
   }
+
+  // 接受消息
+  Future<dynamic> platformCallHandler(MethodCall call) async {
+    switch (call.method) {
+      case "callFlutter":
+        print("arguments: " + call.arguments);
+        return call.arguments;
+        break;
+    }
+  }
+
 
   // 接收消息
   void receiveMessage() {
