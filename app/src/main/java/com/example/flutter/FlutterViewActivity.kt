@@ -20,9 +20,11 @@ class FlutterViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flutter_view)
 
+        val router = intent.getStringExtra(MainActivity::class.java.simpleName)
+
         // 创建可缓存的FlutterEngine对象
         val flutterEngine = FlutterEngine(this)
-        flutterEngine.navigationChannel.setInitialRoute("route2")
+        flutterEngine.navigationChannel.setInitialRoute(router)
         flutterEngine.dartExecutor.executeDartEntrypoint(DartExecutor.DartEntrypoint.createDefault())
 
         FlutterEngineCache.getInstance().put("my_engine_id",flutterEngine)

@@ -3,6 +3,8 @@ package com.example.flutter
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,12 +13,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener {
-            startActivity(Intent(this,FlutterMainActivity::class.java))
-        }
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
 
-        button1.setOnClickListener {
-            startActivity(Intent(this,FlutterViewActivity::class.java))
+        val data = ArrayList<ItemEntity>()
+        data.add(ItemEntity(getString(R.string.test_flutter_native_communication),"router0"))
+        data.add(ItemEntity(getString(R.string.flutter_text),"router1"))
+        data.add(ItemEntity(getString(R.string.flutter_router),"router2"))
+
+        val adapter = ListItemAdapter(R.layout.item_view,data)
+        recyclerView.adapter = adapter
+
+        adapter.setOnItemClickListener { adapter, view, position ->
+            val itemEntity = data[position]
+            if(itemEntity.router == "router0") {
+                startActivity(Intent(this,FlutterMainActivity::class.java))
+            } else {
+                val intent = Intent(this,FlutterViewActivity::class.java)
+                intent.putExtra(MainActivity::class.java.simpleName,itemEntity.router)
+                startActivity(intent)
+            }
         }
     }
 

@@ -50,7 +50,7 @@ class FlutterMainActivity : AppCompatActivity() {
 
         // 创建可缓存的FlutterEngine对象
         val flutterEngine = FlutterEngine(this)
-        flutterEngine.navigationChannel.setInitialRoute("route1")
+        flutterEngine.navigationChannel.setInitialRoute("router1")
         flutterEngine.dartExecutor.executeDartEntrypoint(DartExecutor.DartEntrypoint.createDefault())
 
         FlutterEngineCache.getInstance().put("my_engine_id",flutterEngine)

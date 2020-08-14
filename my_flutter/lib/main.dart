@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -31,12 +30,13 @@ class MyApp extends StatelessWidget {
     );
   }
 
+  // ignore: missing_return
   Widget _widget(String route) {
     switch(route) {
-      case "route1":
+      case "router1":
         return MyHomePage(title: 'Home Page',);
-      case "route2":
-        return HomePage(title: '测试',);
+      case "router2":
+        return HomePage(title: 'Home',);
     }
   }
 
