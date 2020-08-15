@@ -2,6 +2,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
 import 'package:my_flutter/RouterPage.dart';
@@ -62,6 +63,8 @@ class MyApp extends StatelessWidget {
         return HomePage2(title: "路由跳转测试",);
       case "router4":
         return TextWidget();
+      case "router5":
+        return ButtonWidget();
     }
   }
 
