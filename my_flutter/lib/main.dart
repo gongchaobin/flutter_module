@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
+import 'package:my_flutter/ImageWidget.dart';
 import 'package:my_flutter/RouterPage.dart';
 import 'package:my_flutter/TextWidget.dart';
 
@@ -65,6 +66,8 @@ class MyApp extends StatelessWidget {
         return TextWidget();
       case "router5":
         return ButtonWidget();
+      case "router6":
+        return ImageWidget();
     }
   }
 
