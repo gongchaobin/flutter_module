@@ -14,7 +14,9 @@ class RouterPage extends StatelessWidget {
     return WillPopScope(
       child:  Scaffold(
         appBar: AppBar(
-          title: Text("$text"),
+          title: Text("$text",style: TextStyle(
+            fontSize: 16
+          ),),
           automaticallyImplyLeading: true,
         ),
         body: Center(

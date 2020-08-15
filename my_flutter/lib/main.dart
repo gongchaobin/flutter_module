@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
 import 'package:my_flutter/RouterPage.dart';
+import 'package:my_flutter/TextWidget.dart';
 
 import 'MyHomePage.dart';
 
@@ -35,18 +36,18 @@ class MyApp extends StatelessWidget {
           return RouterPage(text: ModalRoute.of(context).settings.arguments,);
         }
       },
-      onGenerateRoute:(RouteSettings settings){
-        return MaterialPageRoute(builder: (context){
-          print("MaterialPageRoute");
-          String routeName = settings.name;
-          switch(routeName) {
-            case "new_page":
-            return RouterPage(text: ModalRoute.of(context).settings.arguments,);
-          }
-          return HomePage2(title: "路由跳转测试",);
-        }
-        );
-      },
+//      onGenerateRoute:(RouteSettings settings){
+//        return MaterialPageRoute(builder: (context){
+//          print("MaterialPageRoute");
+//          String routeName = settings.name;
+//          switch(routeName) {
+//            case "new_page":
+//            return RouterPage(text: ModalRoute.of(context).settings.arguments,);
+//          }
+//          return HomePage2(title: "路由跳转测试",);
+//        }
+//        );
+//      },
     );
   }
 
@@ -59,6 +60,8 @@ class MyApp extends StatelessWidget {
         return HomePage(title: 'Home',);
       case "router3":
         return HomePage2(title: "路由跳转测试",);
+      case "router4":
+        return TextWidget();
     }
   }
 

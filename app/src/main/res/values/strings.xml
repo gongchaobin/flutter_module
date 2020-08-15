@@ -4,5 +4,6 @@
     <string name="test_flutter_native_communication">测试原生和Flutter通信</string>
     <string name="flutter_text">Flutter默认启动</string>
     <string name="flutter_router">Flutter路由</string>
+    <string name="flutter_text_widget">Flutter文本</string>
 
 </resources>
