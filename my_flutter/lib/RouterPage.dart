@@ -11,21 +11,24 @@ class RouterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("$text"),
-        automaticallyImplyLeading: true,
-      ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () => Navigator.pop(context,"我是返回值"),
-          child: Text(
-            "返回"
+    return WillPopScope(
+      child:  Scaffold(
+        appBar: AppBar(
+          title: Text("$text"),
+          automaticallyImplyLeading: true,
+        ),
+        body: Center(
+          child: RaisedButton(
+            onPressed: () => Navigator.pop(context,"我是返回值"),
+            child: Text(
+              "返回"
+            ),
           ),
         ),
-//        child: Text("This is a new router"),
       ),
     );
+
+
   }
 
 }
