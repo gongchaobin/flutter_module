@@ -4,16 +4,26 @@ import 'package:flutter/material.dart';
 
 class RouterPage extends StatelessWidget {
 
+  RouterPage({Key key,this.text}): super();
+
+  final String text;
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text("新路由"),
+        title: Text("$text"),
         automaticallyImplyLeading: true,
       ),
       body: Center(
-        child: Text("This is a new router"),
+        child: RaisedButton(
+          onPressed: () => Navigator.pop(context,"我是返回值"),
+          child: Text(
+            "返回"
+          ),
+        ),
+//        child: Text("This is a new router"),
       ),
     );
   }

@@ -18,10 +18,15 @@ class HomePage2 extends StatefulWidget {
 
 class _HomePageState extends State<HomePage2> {
 
-  void _incrementCounter() {
-    Navigator.push(context, MaterialPageRoute(builder: (context){
-      return RouterPage();
-    }));
+  void _incrementCounter() async{
+    var result = await Navigator.push(context, MaterialPageRoute(
+      builder: (context) {
+        return RouterPage(
+          text: "我是新路由",
+        );
+      },maintainState: true
+    ),);
+    print("路由返回值: " + result);
   }
 
   @override
@@ -35,8 +40,25 @@ class _HomePageState extends State<HomePage2> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: TextStyle(
+              fontSize: 16
+          ),
+        ),
         centerTitle: true,
+      ),
+      body: Center(
+        child: FlatButton(
+          onPressed: _incrementCounter,
+          child: Text(
+            "路由跳转测试",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.blue
+            ),
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
