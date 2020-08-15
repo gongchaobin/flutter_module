@@ -29,12 +29,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: _widget(route),
-//      routes: {
-//        "new_page":(context) {
-//          print("RouterPage");
-//          return RouterPage(text: ModalRoute.of(context).settings.arguments,);
-//        }
-//      },
+      routes: {
+        "new_page":(context) {
+          print("RouterPage");
+          return RouterPage(text: ModalRoute.of(context).settings.arguments,);
+        }
+      },
       onGenerateRoute:(RouteSettings settings){
         return MaterialPageRoute(builder: (context){
           print("MaterialPageRoute");
