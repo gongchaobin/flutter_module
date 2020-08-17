@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/CkButtonWidget.dart';
 import 'package:my_flutter/EditWidget.dart';
+import 'package:my_flutter/FlexLayoutWidget.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
 import 'package:my_flutter/ImageWidget.dart';
@@ -80,8 +81,10 @@ class MyApp extends StatelessWidget {
         return ProgressDialogWidget();
       case "router10":
         return LinearLayoutWidget();
-
+      case "router11":
+        return FlexLayoutWidget();
     }
+
   }
 
 
