@@ -13,6 +13,7 @@ import 'package:my_flutter/ImageWidget.dart';
 import 'package:my_flutter/LinearLayoutWidget.dart';
 import 'package:my_flutter/ProgressDialogWidget.dart';
 import 'package:my_flutter/RouterPage.dart';
+import 'package:my_flutter/StackLayoutWidget.dart';
 import 'package:my_flutter/TextWidget.dart';
 
 import 'MyHomePage.dart';
@@ -86,6 +87,8 @@ class MyApp extends StatelessWidget {
         return FlexLayoutWidget();
       case "router12":
         return FlowLayoutWidget();
+      case "router13":
+        return StackLayoutWidget();
     }
 
   }
