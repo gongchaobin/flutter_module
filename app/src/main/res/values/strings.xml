@@ -12,5 +12,6 @@
     <string name="flutter_progressDialog">Flutter进度框</string>
     <string name="flutter_LinearLayout">Flutter线形布局</string>
     <string name="flutter_flexLayout">Flutter弹性布局</string>
+    <string name="flutter_flowLayout">Flutter流式布局</string>
 
 </resources>

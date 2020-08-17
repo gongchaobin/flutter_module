@@ -6,6 +6,7 @@ import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/CkButtonWidget.dart';
 import 'package:my_flutter/EditWidget.dart';
 import 'package:my_flutter/FlexLayoutWidget.dart';
+import 'package:my_flutter/FlowLayoutWidget.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
 import 'package:my_flutter/ImageWidget.dart';
@@ -83,6 +84,8 @@ class MyApp extends StatelessWidget {
         return LinearLayoutWidget();
       case "router11":
         return FlexLayoutWidget();
+      case "router12":
+        return FlowLayoutWidget();
     }
 
   }

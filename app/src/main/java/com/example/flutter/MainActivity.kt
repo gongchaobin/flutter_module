@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         data.add(ItemEntity(getString(R.string.flutter_progressDialog),"router9"))
         data.add(ItemEntity(getString(R.string.flutter_LinearLayout),"router10"))
         data.add(ItemEntity(getString(R.string.flutter_flexLayout),"router11"))
+        data.add(ItemEntity(getString(R.string.flutter_flowLayout),"router12"))
 
 
         val adapter = ListItemAdapter(R.layout.item_view,data)
