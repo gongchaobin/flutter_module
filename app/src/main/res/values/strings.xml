@@ -10,5 +10,6 @@
     <string name="flutter_checkButton">Flutter单选框/复选框</string>
     <string name="flutter_editText">Flutter编辑框</string>
     <string name="flutter_progressDialog">Flutter进度框</string>
+    <string name="flutter_LinearLayout">Flutter线形布局</string>
 
 </resources>
