@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         data.add(ItemEntity(getString(R.string.flutter_button),"router5"))
         data.add(ItemEntity(getString(R.string.flutter_image),"router6"))
         data.add(ItemEntity(getString(R.string.flutter_checkButton),"router7"))
+        data.add(ItemEntity(getString(R.string.flutter_editText),"router8"))
 
         val adapter = ListItemAdapter(R.layout.item_view,data)
         recyclerView.adapter = adapter

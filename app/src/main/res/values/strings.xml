@@ -8,6 +8,7 @@
     <string name="flutter_button">Flutter按钮</string>
     <string name="flutter_image">Flutter图片</string>
     <string name="flutter_checkButton">Flutter单选框/复选框</string>
+    <string name="flutter_editText">Flutter编辑框</string>
 
 
 </resources>

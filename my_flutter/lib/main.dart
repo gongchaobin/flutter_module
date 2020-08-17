@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/CkButtonWidget.dart';
+import 'package:my_flutter/EditWidget.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
 import 'package:my_flutter/ImageWidget.dart';
@@ -71,6 +72,8 @@ class MyApp extends StatelessWidget {
         return ImageWidget();
       case "router7":
         return CkButtonWidget();
+      case "router8":
+        return EditWidget();
     }
   }
 
