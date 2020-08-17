@@ -8,6 +8,7 @@ import 'package:my_flutter/EditWidget.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
 import 'package:my_flutter/ImageWidget.dart';
+import 'package:my_flutter/ProgressDialogWidget.dart';
 import 'package:my_flutter/RouterPage.dart';
 import 'package:my_flutter/TextWidget.dart';
 
@@ -74,6 +75,8 @@ class MyApp extends StatelessWidget {
         return CkButtonWidget();
       case "router8":
         return EditWidget();
+      case "router9":
+        return ProgressDialogWidget();
     }
   }
 
