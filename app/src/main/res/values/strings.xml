@@ -19,5 +19,7 @@
     <string name="flutter_box">Flutter尺寸限制类容器</string>
     <string name="flutter_decoratedBox">Flutter装饰容器</string>
     <string name="flutter_transform">Flutter变换</string>
+    <string name="flutter_container">Flutter容器</string>
+
 
 </resources>
