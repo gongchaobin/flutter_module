@@ -12,6 +12,7 @@ import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
 import 'package:my_flutter/ImageWidget.dart';
 import 'package:my_flutter/LinearLayoutWidget.dart';
+import 'package:my_flutter/PaddingWidget.dart';
 import 'package:my_flutter/ProgressDialogWidget.dart';
 import 'package:my_flutter/RouterPage.dart';
 import 'package:my_flutter/StackLayoutWidget.dart';
@@ -92,6 +93,8 @@ class MyApp extends StatelessWidget {
         return StackLayoutWidget();
       case "router14":
         return AlignWidget();
+      case "router15":
+        return PaddingWidget();
     }
 
   }
