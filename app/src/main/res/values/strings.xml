@@ -17,5 +17,6 @@
     <string name="flutter_align">Flutter对齐与相对定位</string>
     <string name="flutter_padding">Flutter/Padding</string>
     <string name="flutter_box">Flutter尺寸限制类容器</string>
+    <string name="flutter_decoratedBox">Flutter装饰容器</string>
 
 </resources>

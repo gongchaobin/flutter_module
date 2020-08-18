@@ -6,6 +6,7 @@ import 'package:my_flutter/AlignWidget.dart';
 import 'package:my_flutter/BoxWidget.dart';
 import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/CkButtonWidget.dart';
+import 'package:my_flutter/DecoratedBoxWidget.dart';
 import 'package:my_flutter/EditWidget.dart';
 import 'package:my_flutter/FlexLayoutWidget.dart';
 import 'package:my_flutter/FlowLayoutWidget.dart';
@@ -98,6 +99,9 @@ class MyApp extends StatelessWidget {
         return PaddingWidget();
       case "router16":
         return BoxWidget();
+      case "router17":
+        return DecoratedBoxWidget();
+
     }
 
   }
