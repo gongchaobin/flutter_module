@@ -18,6 +18,7 @@ import 'package:my_flutter/LinearLayoutWidget.dart';
 import 'package:my_flutter/PaddingWidget.dart';
 import 'package:my_flutter/ProgressDialogWidget.dart';
 import 'package:my_flutter/RouterPage.dart';
+import 'package:my_flutter/ScaffoldWidget.dart';
 import 'package:my_flutter/StackLayoutWidget.dart';
 import 'package:my_flutter/TextWidget.dart';
 
@@ -107,6 +108,8 @@ class MyApp extends StatelessWidget {
         return TransformWidget();
       case "router19":
         return ContainerWidget();
+      case "router20":
+        return ScaffoldWidget();
     }
 
   }
