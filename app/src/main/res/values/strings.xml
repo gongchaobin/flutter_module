@@ -21,6 +21,7 @@
     <string name="flutter_transform">Flutter变换</string>
     <string name="flutter_container">Flutter容器</string>
     <string name="flutter_scaffold">Flutter脚手架</string>
+    <string name="flutter_clip">Flutter裁剪</string>
 
 
 </resources>

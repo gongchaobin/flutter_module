@@ -6,6 +6,7 @@ import 'package:my_flutter/AlignWidget.dart';
 import 'package:my_flutter/BoxWidget.dart';
 import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/CkButtonWidget.dart';
+import 'package:my_flutter/ClipWidget.dart';
 import 'package:my_flutter/ContainerWidget.dart';
 import 'package:my_flutter/DecoratedBoxWidget.dart';
 import 'package:my_flutter/EditWidget.dart';
@@ -110,6 +111,8 @@ class MyApp extends StatelessWidget {
         return ContainerWidget();
       case "router20":
         return ScaffoldWidget();
+      case "router21":
+        return ClipWidget();
     }
 
   }
