@@ -27,7 +27,8 @@
     <string name="flutter_scrollView">Flutter-SingleChildScrollView</string>
     <string name="flutter_listView">Flutter-ListView</string>
     <string name="flutter_listView2">Flutter-ListView2</string>
-    <string name="flutter_GridView">Flutter_GridView</string>
-    <string name="flutter_CustomScrollView">flutter_CustomScrollView</string>
+    <string name="flutter_GridView">Flutter-GridView</string>
+    <string name="flutter_CustomScrollView">flutter-CustomScrollView</string>
+    <string name="flutter_ScrollController">flutter-ScrollController</string>
 
 </resources>
