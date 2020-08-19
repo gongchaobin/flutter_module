@@ -26,6 +26,7 @@ import 'package:my_flutter/RouterPage.dart';
 import 'package:my_flutter/ScaffoldWidget.dart';
 import 'package:my_flutter/ScrollControllerWidget.dart';
 import 'package:my_flutter/ScrollViewWidget.dart';
+import 'package:my_flutter/ShareDataWidget.dart';
 import 'package:my_flutter/StackLayoutWidget.dart';
 import 'package:my_flutter/TextWidget.dart';
 
@@ -131,6 +132,8 @@ class MyApp extends StatelessWidget {
         return CustomScrollViewWidget();
       case "router27":
         return ScrollControllerWidget();
+      case "router28":
+        return ShareDataWidget();
     }
 
   }
