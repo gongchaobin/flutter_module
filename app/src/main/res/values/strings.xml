@@ -22,6 +22,7 @@
     <string name="flutter_container">Flutter容器</string>
     <string name="flutter_scaffold">Flutter脚手架</string>
     <string name="flutter_clip">Flutter裁剪</string>
+    <string name="flutter_scrollView">Flutter/ScrollView</string>
 
 
 </resources>
