@@ -23,6 +23,8 @@
     <string name="flutter_scaffold">Flutter脚手架</string>
     <string name="flutter_clip">Flutter裁剪</string>
     <string name="flutter_scrollView">Flutter/ScrollView</string>
+    <string name="flutter_listView">Flutter列表</string>
+    <string name="flutter_listView2">Flutter无限加载列表</string>
 
 
 </resources>
