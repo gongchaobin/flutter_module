@@ -3,30 +3,31 @@
 
     <string name="flutter_book_test">flutter实战-基础学习</string>
 
-    <string name="test_flutter_native_communication">测试原生和Flutter通信</string>
-    <string name="flutter_text">Flutter默认启动</string>
-    <string name="flutter_router">Flutter路由</string>
-    <string name="flutter_text_widget">Flutter文本</string>
-    <string name="flutter_button">Flutter按钮</string>
-    <string name="flutter_image">Flutter图片</string>
-    <string name="flutter_checkButton">Flutter单选框/复选框</string>
-    <string name="flutter_editText">Flutter编辑框</string>
-    <string name="flutter_progressDialog">Flutter进度框</string>
-    <string name="flutter_LinearLayout">Flutter线形布局</string>
-    <string name="flutter_flexLayout">Flutter弹性布局</string>
-    <string name="flutter_flowLayout">Flutter流式布局</string>
-    <string name="flutter_stackLayout">Flutter层叠布局</string>
-    <string name="flutter_align">Flutter对齐与相对定位</string>
-    <string name="flutter_padding">Flutter/Padding</string>
-    <string name="flutter_box">Flutter尺寸限制类容器</string>
-    <string name="flutter_decoratedBox">Flutter装饰容器</string>
-    <string name="flutter_transform">Flutter变换</string>
-    <string name="flutter_container">Flutter容器</string>
-    <string name="flutter_scaffold">Flutter脚手架</string>
-    <string name="flutter_clip">Flutter裁剪</string>
-    <string name="flutter_scrollView">Flutter/ScrollView</string>
-    <string name="flutter_listView">Flutter列表</string>
-    <string name="flutter_listView2">Flutter无限加载列表</string>
-
+    <string name="test_flutter_native_communication">原生/Flutter-Channel通信</string>
+    <string name="flutter_text">Flutter计时器</string>
+    <string name="flutter_router">Flutter-PageRouter</string>
+    <string name="flutter_text_widget">Flutter-Text</string>
+    <string name="flutter_button">Flutter-Button</string>
+    <string name="flutter_image">Flutter-Image</string>
+    <string name="flutter_checkButton">Flutter-Switch/CheckBox</string>
+    <string name="flutter_editText">Flutter-TextField</string>
+    <string name="flutter_progressDialog">Flutter-CircularProgressIndicator</string>
+    <string name="flutter_LinearLayout">Flutter-Row/Colum</string>
+    <string name="flutter_flexLayout">Flutter-Flex/Expand</string>
+    <string name="flutter_flowLayout">Flutter-Wrap/Flow</string>
+    <string name="flutter_stackLayout">Flutter-Stack</string>
+    <string name="flutter_align">Flutter-Align</string>
+    <string name="flutter_padding">Flutter-Padding</string>
+    <string name="flutter_box">Flutter-ConstrainedBox</string>
+    <string name="flutter_decoratedBox">Flutter-DecoratedBox</string>
+    <string name="flutter_transform">Flutter-Transform</string>
+    <string name="flutter_container">Flutter-Container</string>
+    <string name="flutter_scaffold">Flutter-Scaffold/TabBar/底部导航</string>
+    <string name="flutter_clip">Flutter-Clip</string>
+    <string name="flutter_scrollView">Flutter-SingleChildScrollView</string>
+    <string name="flutter_listView">Flutter-ListView</string>
+    <string name="flutter_listView2">Flutter-ListView2</string>
+    <string name="flutter_GridView">Flutter_GridView</string>
+    <string name="flutter_CustomScrollView">flutter_CustomScrollView</string>
 
 </resources>

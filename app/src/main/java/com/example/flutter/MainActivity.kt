@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         data.add(ItemEntity(getString(R.string.flutter_scrollView),"router22"))
         data.add(ItemEntity(getString(R.string.flutter_listView),"router23"))
         data.add(ItemEntity(getString(R.string.flutter_listView2),"router24"))
+        data.add(ItemEntity(getString(R.string.flutter_GridView),"router25"))
+        data.add(ItemEntity(getString(R.string.flutter_CustomScrollView),"router26"))
 
         val adapter = ListItemAdapter(R.layout.item_view,data)
         recyclerView.adapter = adapter
