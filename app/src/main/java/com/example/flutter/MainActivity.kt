@@ -50,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         data.add(ItemEntity(getString(R.string.flutter_StreamBuilder),"router31"));
         data.add(ItemEntity(getString(R.string.flutter_Dialog),"router32"));
         data.add(ItemEntity(getString(R.string.flutter_GestureDetector),"router33"));
+        data.add(ItemEntity(getString(R.string.flutter_GestureRecognizer),"router34"));
+
 
         val adapter = ListItemAdapter(R.layout.item_view,data)
         recyclerView.adapter = adapter
