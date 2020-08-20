@@ -37,5 +37,6 @@
     <string name="flutter_Dialog">Flutter-Dialog</string>
     <string name="flutter_GestureDetector">Flutter-GestureDetector</string>
     <string name="flutter_GestureRecognizer">Flutter-GestureRecognizer</string>
+    <string name="flutter_Animation">Flutter-Animation</string>
 
 </resources>

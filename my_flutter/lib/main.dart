@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:my_flutter/AlignWidget.dart';
+import 'package:my_flutter/AnimationWidget.dart';
 import 'package:my_flutter/BoxWidget.dart';
 import 'package:my_flutter/ButtonWidget.dart';
 import 'package:my_flutter/CkButtonWidget.dart';
@@ -152,6 +153,8 @@ class MyApp extends StatelessWidget {
         return GestureDetectorWidget();
       case "router34":
         return GestureRecognizerWidget();
+      case "router35":
+        return AnimationWidget();
     }
 
 
