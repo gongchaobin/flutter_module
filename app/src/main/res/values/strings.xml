@@ -38,5 +38,6 @@
     <string name="flutter_GestureDetector">Flutter-GestureDetector</string>
     <string name="flutter_GestureRecognizer">Flutter-GestureRecognizer</string>
     <string name="flutter_Animation">Flutter-Animation</string>
+    <string name="flutter_file">Flutter-File</string>
 
 </resources>
