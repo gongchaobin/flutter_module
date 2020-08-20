@@ -28,6 +28,7 @@ import 'package:my_flutter/ScrollControllerWidget.dart';
 import 'package:my_flutter/ScrollViewWidget.dart';
 import 'package:my_flutter/ShareDataWidget.dart';
 import 'package:my_flutter/StackLayoutWidget.dart';
+import 'package:my_flutter/StreamBuilderWidget.dart';
 import 'package:my_flutter/TextWidget.dart';
 import 'package:my_flutter/ThemeDataWidget.dart';
 
@@ -140,6 +141,8 @@ class MyApp extends StatelessWidget {
         return ThemeDataWidget();
       case "router30":
         return FutureBuilderWidget();
+      case "router31":
+        return StreamBuilderWidget();
     }
 
 
