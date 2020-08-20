@@ -35,7 +35,7 @@ class DialogWidget extends StatelessWidget {
             onPressed: () {
             },
           )
-        ], 
+        ],
       ),
     );
 

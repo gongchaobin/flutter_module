@@ -35,5 +35,7 @@
     <string name="flutter_FutureBuilder">Flutter-FutureBuilder</string>
     <string name="flutter_StreamBuilder">Flutter-StreamBuilder</string>
     <string name="flutter_Dialog">Flutter-Dialog</string>
+    <string name="flutter_GestureDetector">Flutter-GestureDetector</string>
+    <string name="flutter_GestureRecognizer">Flutter-GestureRecognizer</string>
 
 </resources>

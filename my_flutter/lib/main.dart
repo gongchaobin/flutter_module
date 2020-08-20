@@ -14,6 +14,7 @@ import 'package:my_flutter/DialogWidget.dart';
 import 'package:my_flutter/EditWidget.dart';
 import 'package:my_flutter/FlexLayoutWidget.dart';
 import 'package:my_flutter/FlowLayoutWidget.dart';
+import 'package:my_flutter/GestureDetectorWidget.dart';
 import 'package:my_flutter/GridViewWidget.dart';
 import 'package:my_flutter/HomePage.dart';
 import 'package:my_flutter/HomePage2.dart';
@@ -146,6 +147,8 @@ class MyApp extends StatelessWidget {
         return StreamBuilderWidget();
       case "router32":
         return DialogWidget();
+      case "router33":
+        return GestureDetectorWidget();
     }
 
 
