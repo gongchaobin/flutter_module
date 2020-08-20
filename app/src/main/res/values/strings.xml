@@ -32,5 +32,7 @@
     <string name="flutter_ScrollController">Flutter-ScrollController</string>
     <string name="flutter_InheritedWidget">Flutter-InheritedWidget</string>
     <string name="flutter_themeData">Flutter-ThemeData</string>
-    
+    <string name="flutter_FutureBuilder">Flutter-FutureBuilder</string>
+    <string name="flutter_StreamBuilder">Flutter-StreamBuilder</string>
+
 </resources>

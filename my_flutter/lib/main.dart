@@ -31,6 +31,7 @@ import 'package:my_flutter/StackLayoutWidget.dart';
 import 'package:my_flutter/TextWidget.dart';
 import 'package:my_flutter/ThemeDataWidget.dart';
 
+import 'FutureBuilderWidget.dart';
 import 'MyHomePage.dart';
 import 'TransformWidget.dart';
 
@@ -137,6 +138,8 @@ class MyApp extends StatelessWidget {
         return ShareDataWidget();
       case "router29":
         return ThemeDataWidget();
+      case "router30":
+        return FutureBuilderWidget();
     }
 
 
