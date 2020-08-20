@@ -34,5 +34,6 @@
     <string name="flutter_themeData">Flutter-ThemeData</string>
     <string name="flutter_FutureBuilder">Flutter-FutureBuilder</string>
     <string name="flutter_StreamBuilder">Flutter-StreamBuilder</string>
+    <string name="flutter_Dialog">Flutter-Dialog</string>
 
 </resources>

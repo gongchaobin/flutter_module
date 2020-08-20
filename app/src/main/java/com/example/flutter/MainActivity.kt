@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         data.add(ItemEntity(getString(R.string.flutter_themeData),"router29"));
         data.add(ItemEntity(getString(R.string.flutter_FutureBuilder),"router30"));
         data.add(ItemEntity(getString(R.string.flutter_StreamBuilder),"router31"));
+        data.add(ItemEntity(getString(R.string.flutter_Dialog),"router32"));
 
         val adapter = ListItemAdapter(R.layout.item_view,data)
         recyclerView.adapter = adapter
