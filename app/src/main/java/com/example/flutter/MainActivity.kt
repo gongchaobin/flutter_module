@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         data.add(ItemEntity(getString(R.string.flutter_GestureRecognizer),"router34"));
         data.add(ItemEntity(getString(R.string.flutter_Animation),"router35"));
         data.add(ItemEntity(getString(R.string.flutter_file),"router36"));
+        data.add(ItemEntity(getString(R.string.flutter_dio),"router37"));
 
         val adapter = ListItemAdapter(R.layout.item_view,data)
         recyclerView.adapter = adapter

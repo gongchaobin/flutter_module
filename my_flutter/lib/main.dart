@@ -12,6 +12,7 @@ import 'package:my_flutter/ContainerWidget.dart';
 import 'package:my_flutter/CustomScrollViewWidget.dart';
 import 'package:my_flutter/DecoratedBoxWidget.dart';
 import 'package:my_flutter/DialogWidget.dart';
+import 'package:my_flutter/DioWidget.dart';
 import 'package:my_flutter/EditWidget.dart';
 import 'package:my_flutter/FileWidget.dart';
 import 'package:my_flutter/FlexLayoutWidget.dart';
@@ -158,6 +159,8 @@ class MyApp extends StatelessWidget {
         return AnimationWidget();
       case "router36":
         return FileWidget();
+      case "router37":
+        return DioWidget();
     }
 
   }
